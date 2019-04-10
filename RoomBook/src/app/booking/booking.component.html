@@ -1,0 +1,30 @@
+<div class="container-fluid">
+    <div class="content">
+      <i class="fa fa-users"></i> <span class="icon-text">Choose number of <b>People</b></span>
+      <table class="table">
+        <tbody>
+          <tr class="first-row">
+            <td width="7px"><i class="fa fa-bed"></i></td>
+            <td class="title">ROOMS</td>
+            <td width="10px" (click)="roomCountAction('decrement')"><i class="fa fa-minus-circle"></i></td>
+            <td width="10px">{{roomCount}}</td>
+            <td width="10px" (click)="roomCountAction('increment')"><i class="fa fa-plus-circle"></i></td>
+          </tr>
+          <tr>
+            <td><i class="fa fa-user"></i></td>
+            <td class="title">ADULTS</td>
+            <td width="10px" (click)="adultCountAction('decrement')"><i class="fa fa-minus-circle"></i></td>
+            <td width="10px">{{adultCount}}</td>
+            <td width="10px" (click)="adultCountAction('increment')"><i class="fa fa-plus-circle"></i></td>
+          </tr>
+          <tr>
+            <td><i class="fa fa-child"></i></td>
+            <td class="title">CHILDREN</td>
+            <td width="10px" (click)="childCountAction('decrement')"><i class="fa fa-minus-circle"></i></td>
+            <td width="10px">{{childrenCount}}</td>
+            <td width="10px" (click)="childCountAction('increment')"><i class="fa fa-plus-circle"></i></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
